@@ -1,2 +1,9 @@
-# Example
-Example project for your plugins on kotlin and mods for cristalix.ru
+# Готовый проект для вашего плагина на Kotlin
+Чтобы не тратить время в пустую!
+## Как же использовать это чудо?
+1. Нажимаете большую зелёную кнопку `Use this template` 
+2. Клонируем репозиторий на пк
+3. Запускаем в IDE
+4. Меняем "example" в `build.gradle` и `settings.gradle` на свои названия
+(Также меняем в `plugin.yml`)
+5. Можно начинать работать!!!
