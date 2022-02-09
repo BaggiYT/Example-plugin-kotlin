@@ -7,3 +7,5 @@
 4. Меняем "example" в `build.gradle` и `settings.gradle` на свои названия
 (Также меняем в `plugin.yml`)
 5. Можно начинать работать!!!
+## Немного инфы
+Ради вашего удобства, я добавил образец эвента onJoin(`ExampleListener`) и команды `/exampleCommand` (в главном классе `App.kt`)
