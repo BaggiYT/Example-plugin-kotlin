@@ -17,9 +17,9 @@ class App : JavaPlugin() {
         Bukkit.getPluginManager().registerEvents(ExampleListener, this)
 
         //Register commands
-        getCommand("exampleCommand").setExecutor(CommandExecutor { sender, _, _, _ ->
+        getCommand("exampleCommand").setExecutor(CommandExecutor { sender, _, args, _ ->
             if (sender is Player)
-                sender.sendMessage("Example message!")
+                sender.sendMessage("Example message! " + args[0])
             return@CommandExecutor true
         })
 
