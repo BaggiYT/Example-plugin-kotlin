@@ -10,4 +10,9 @@ object ExampleListener : Listener {
     fun onJoin(event: PlayerJoinEvent){
         event.player.sendMessage("Example message")
     }
+
+    @EventHandler
+    fun PlayerJoinEvent.handle(){
+        it.sendMessage("Example message)
+    }
 }
