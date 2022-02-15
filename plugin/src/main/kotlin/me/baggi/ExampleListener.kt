@@ -13,6 +13,6 @@ object ExampleListener : Listener {
 
     @EventHandler
     fun PlayerJoinEvent.handle(){
-        it.sendMessage("Example message)
+        it.sendMessage("Example message")
     }
 }
