@@ -1,6 +1,3 @@
-main: me.baggi.App
-name: ExamplePlugin
+main: me.baggi.plugin.App
+name: Plugin
 version: 1.0
-commands:
-  exampleCommand:
-    usage: /<exampleCommand>
