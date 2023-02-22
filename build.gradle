@@ -29,12 +29,4 @@ allprojects {
             freeCompilerArgs = ["-Xlambdas=indy"]
         }
     }
-
-    jar {
-        from {
-            configurations.runtimeClasspath.collect { it.directory ? it : zipTree(it) }
-        }
-        duplicatesStrategy DuplicatesStrategy.EXCLUDE
-    }
-
 }
