@@ -6,4 +6,9 @@ dependencies {
 
 jar {
     archiveBaseName.set 'plugin'
+    from sourceSets.main.resources
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    compileJava.options.encoding = 'UTF-8'
+    compileTestJava.options.encoding = 'UTF-8'
 }
